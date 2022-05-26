@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --white: white;
+  --black: black;
+  --greenblue: #97edb6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +13,7 @@
 
 * a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 * li {
@@ -32,8 +38,8 @@ header .header-banner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   font-weight: 600;
   cursor: default;
 }
@@ -51,8 +57,8 @@ header .mobile-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid black;
-  background-color: white;
+  border-bottom: 1px solid var(--black);
+  background-color: var(--white);
 }
 
 header .mobile-header .mobile-hamb-open {
@@ -76,11 +82,11 @@ header .mobile-header .mobile-hamb-menu {
   width: 40%;
   min-height: 100vh;
   z-index: 3;
-  background-color: white;
+  background-color: var(--white);
   z-index: 3;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--black);
 }
 
 header .mobile-header .mobile-hamb-menu .mobile-list-menu {
@@ -104,26 +110,26 @@ header .mobile-header .mobile-hamb-menu .mobile-list-menu {
 header .mobile-header .mobile-hamb-menu .mobile-list-menu a {
   width: calc(100% - 10%);
   padding: 5% 0 5% 10%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
 }
 
 header .mobile-header .mobile-hamb-menu .mobile-list-menu a:first-of-type {
-  border-top: 1px solid black;
-  background-color: black;
-  color: white;
+  border-top: 1px solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
   font-weight: 600;
   cursor: pointer;
 }
 
 header .mobile-header .mobile-hamb-menu .mobile-list-menu a:hover {
-  -webkit-text-decoration: underline 1px black;
-          text-decoration: underline 1px black;
+  -webkit-text-decoration: underline 1px var(--black);
+          text-decoration: underline 1px var(--black);
   text-underline-offset: 6px;
 }
 
 header .mobile-header .mobile-hamb-menu .mobile-list-menu a:first-of-type:hover {
-  -webkit-text-decoration: underline 2px white;
-          text-decoration: underline 2px white;
+  -webkit-text-decoration: underline 2px var(--white);
+          text-decoration: underline 2px var(--white);
   text-underline-offset: 6px;
 }
 
@@ -163,8 +169,8 @@ header .large-screens-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid black;
-  background-color: white;
+  border-bottom: 1px solid var(--black);
+  background-color: var(--white);
 }
 
 header .large-screens-header .logo {
@@ -192,7 +198,7 @@ header .large-screens-header .nav-links-one {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--black);
 }
 
 header .large-screens-header .nav-links-one ul {
@@ -222,7 +228,7 @@ header .large-screens-header .nav-links-two {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--black);
 }
 
 header .large-screens-header .nav-links-two ul {
@@ -244,8 +250,8 @@ header .large-screens-header .nav-links-two ul li {
 }
 
 header .large-screens-header a:hover {
-  -webkit-text-decoration: underline 1px black;
-          text-decoration: underline 1px black;
+  -webkit-text-decoration: underline 1px var(--black);
+          text-decoration: underline 1px var(--black);
   text-underline-offset: 6px;
 }
 
@@ -262,7 +268,7 @@ header .large-screens-header a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/assets/img/background1.jpg);
+  background-image: url(/assets/img/background4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-align: center;
@@ -274,6 +280,8 @@ header .large-screens-header a:hover {
 .main-section h1 {
   font-size: 4em;
   cursor: default;
+  color: var(--white);
+  margin-top: 5%;
 }
 
 .main-section h1 p::before {
@@ -323,6 +331,7 @@ header .large-screens-header a:hover {
   font-size: 1.3em;
   font-weight: 500;
   margin: 2% 0;
+  color: var(--white);
   cursor: default;
 }
 
@@ -330,27 +339,27 @@ header .large-screens-header a:hover {
   width: 15%;
   padding: 1%;
   border: none;
-  background-color: black;
-  margin-bottom: 2%;
+  background-color: var(--white);
+  border: 1px solid var(--black);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
 }
 
 .main-section button a {
-  color: white;
+  color: var(--black);
   font-size: 1.1em;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .main-section button:hover {
   -webkit-transform: scale(0.98, 0.98);
           transform: scale(0.98, 0.98);
-  background-color: white;
+  background-color: var(--black);
 }
 
 .main-section button:hover > a {
-  color: black;
+  color: var(--white);
   font-weight: 600;
 }
 
@@ -366,8 +375,8 @@ header .large-screens-header a:hover {
 }
 
 .brand-section .head-container {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
 }
 
 .brand-section .head-container .headlines-container {
@@ -400,11 +409,11 @@ header .large-screens-header a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--black);
   font-weight: 500;
   cursor: default;
-  -webkit-text-decoration: underline wavy 2px black;
-          text-decoration: underline wavy 2px black;
+  -webkit-text-decoration: underline wavy 2px var(--black);
+          text-decoration: underline wavy 2px var(--black);
   text-underline-offset: 6px;
 }
 
@@ -442,25 +451,25 @@ header .large-screens-header a:hover {
   width: 15%;
   padding: 1%;
   border: none;
-  background-color: white;
-  border: 1px solid black;
+  background-color: var(--white);
+  border: 1px solid var(--black);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   margin: 2% 0 5%;
 }
 
 .brand-section .brand-info button a {
-  color: black;
+  color: var(--black);
   font-size: 1.1em;
   font-weight: 600;
 }
 
 .brand-section .brand-info button:hover {
-  background-color: black;
+  background-color: var(--black);
 }
 
 .brand-section .brand-info button:hover > a {
-  color: white;
+  color: var(--white);
   font-weight: 600;
 }
 
@@ -588,17 +597,17 @@ header .large-screens-header a:hover {
   padding: 4%;
   font-size: 1em;
   font-weight: 500;
-  background-color: white;
-  border: 1px solid black;
-  color: black;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .product-section .positions-container .product-item .product-info button:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .promotional-section {
@@ -614,14 +623,14 @@ header .large-screens-header a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
 }
 
 .promotional-section .promotional-header {
   width: 100%;
   height: 15vh;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,8 +646,8 @@ header .large-screens-header a:hover {
 
 .promotional-section .promotional-header h1 {
   margin-left: 3%;
-  -webkit-text-decoration: underline wavy 3px #97edb6;
-          text-decoration: underline wavy 3px #97edb6;
+  -webkit-text-decoration: underline wavy 3px var(--greenblue);
+          text-decoration: underline wavy 3px var(--greenblue);
   text-underline-offset: 5px;
   margin-bottom: 1%;
   cursor: default;
@@ -654,14 +663,14 @@ header .large-screens-header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: black;
+  color: var(--black);
   font-weight: 600;
   margin: 0 0.5% 0 3%;
 }
 
 .promotional-section .promotional-header p a:hover {
-  -webkit-text-decoration: underline 1px black;
-          text-decoration: underline 1px black;
+  -webkit-text-decoration: underline 1px var(--black);
+          text-decoration: underline 1px var(--black);
   text-underline-offset: 6px;
 }
 
@@ -693,7 +702,7 @@ header .large-screens-header a:hover {
   background-image: url(/assets/img/promotional-img.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--black);
 }
 
 .promotional-section .promotional-banner .promotional-info {
@@ -730,8 +739,8 @@ header .large-screens-header a:hover {
 .promotional-section .promotional-banner .promotional-info button {
   padding: 1.5% 5%;
   border: none;
-  background-color: white;
-  border: 1px solid black;
+  background-color: var(--white);
+  border: 1px solid var(--black);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   margin-top: 5%;
@@ -739,17 +748,17 @@ header .large-screens-header a:hover {
 }
 
 .promotional-section .promotional-banner .promotional-info button a {
-  color: black;
+  color: var(--black);
   font-size: 1.1em;
   font-weight: 600;
 }
 
 .promotional-section .promotional-banner .promotional-info button:hover {
-  background-color: black;
+  background-color: var(--black);
 }
 
 .promotional-section .promotional-banner .promotional-info button:hover > a {
-  color: white;
+  color: var(--white);
   font-weight: 600;
 }
 
@@ -765,7 +774,7 @@ header .large-screens-header a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 3% 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
 }
 
 .pre-footer img {
@@ -823,7 +832,7 @@ footer .footer-links {
           align-items: center;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
 }
 
 footer .footer-links li {
@@ -838,7 +847,7 @@ footer .footer-links li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--black);
   font-weight: 500;
   cursor: default;
 }
@@ -854,8 +863,8 @@ footer .footer-links li:first-of-type span {
 }
 
 footer .footer-links li:hover {
-  -webkit-text-decoration: underline 1px black;
-          text-decoration: underline 1px black;
+  -webkit-text-decoration: underline 1px var(--black);
+          text-decoration: underline 1px var(--black);
   text-underline-offset: 6px;
 }
 
@@ -868,8 +877,8 @@ footer .footer-banner {
           align-items: center;
   width: 100%;
   height: 5vh;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 footer .footer-banner p {
@@ -936,7 +945,7 @@ footer .footer-banner p {
   .promotional-section .promotional-banner .promotional-img {
     width: 100%;
     height: 55vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
   }
   .promotional-section .promotional-banner .promotional-info {
     width: 100%;
@@ -988,7 +997,7 @@ footer .footer-banner p {
   .promotional-section .promotional-banner .promotional-img {
     width: 100%;
     height: 45vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
   }
   .promotional-section .promotional-banner .promotional-info {
     width: 100%;
@@ -1059,8 +1068,8 @@ footer .footer-banner p {
     width: 40%;
     padding: 3.5% 0;
     border: none;
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--white);
+    border: 1px solid var();
     -webkit-transition: 0.2s;
     transition: 0.2s;
     margin: 10% 0;

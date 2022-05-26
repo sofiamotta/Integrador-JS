@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --white: white;
+  --black: black;
+  --greenblue: #97edb6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+* a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+* li {
+  list-style: none;
+}
+
+.the-lab-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.the-lab-container .banner-space {
+  height: calc(7vh + 5vh);
+}
+
+.the-lab-container .title-container-tl {
+  height: 11vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: bisque;
+  padding: 0 0 0 2.5%;
+  border-bottom: 1px solid var(--black);
+}
+
+.the-lab-container .title-container-tl a {
+  margin: 0 1.5% 0 0;
+}
+
+.the-lab-container .title-container-tl a span {
+  font-size: 2.4em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  font-variation-settings: 'wght' 200;
+}
+
+.the-lab-container .title-container-tl a span:hover {
+  -webkit-transform: translate(-10px);
+          transform: translate(-10px);
+}
+
+.the-lab-container .title-container-tl .text-container h1 {
+  font-size: 2.2em;
+}
+
+.the-lab-container .main-container {
+  width: 100%;
+  height: calc(100vh - 7vh - 5vh - 11vh);
+}
+
+.the-lab-container .main-container .lab-product-container {
+  width: 100%;
+  height: calc(100vh - 7vh - 5vh - 11vh -10vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 2.5% 0;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20vw;
+  z-index: 5;
+  margin-right: 5%;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-01 img {
+  width: 25%;
+  margin-bottom: 10%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-01 button {
+  width: 70%;
+  border: none;
+  padding: 2.5% 4%;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-01 button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-01 button:hover ~ img {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  -webkit-transform: scale(99%);
+          transform: scale(99%);
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20vw;
+  z-index: 5;
+  margin-right: 5%;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-02 img {
+  width: 55%;
+  margin-bottom: 10%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-02 button {
+  width: 70%;
+  border: none;
+  padding: 2.5% 4%;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-02 button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-02 button:hover ~ img {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  -webkit-transform: scale(99%);
+          transform: scale(99%);
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-01.is-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  z-index: 5;
+  margin-right: 5%;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-01.is-active img {
+  width: 10%;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-01.is-active button {
+  display: none;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-02.is-inactive {
+  display: none;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-02.is-active {
+  border: 3px solid pink;
+}
+
+.the-lab-container .main-container .lab-product-container .img-container-01.is-inactive {
+  display: none;
+}
+/*# sourceMappingURL=thelab-style.css.map */
