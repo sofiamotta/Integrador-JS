@@ -1,0 +1,231 @@
+.main-container {
+  width: 100%;
+  height: calc(100vh - 11vh - 7vh - 5vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .serum-container img {
+  width: 80%;
+}
+
+.main-container .lab-product-details {
+  width: 40vw;
+  height: auto;
+}
+
+.main-container .lab-product-details .form-container {
+  border: 1px solid var(--black);
+  cursor: default;
+}
+
+.main-container .lab-product-details .form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .lab-product-details .form-container form .base {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--black);
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 1.5% 3%;
+}
+
+.main-container .lab-product-details .form-container form .base .selectBase {
+  border: 1px solid var(--black);
+  margin: 0 3%;
+  font-size: 1em;
+}
+
+.main-container .lab-product-details .form-container form .base .selectBase option:hover {
+  background-color: coral;
+}
+
+.main-container .lab-product-details .form-container form .product-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid var(--black);
+  padding: 1.5% 3%;
+}
+
+.main-container .lab-product-details .form-container form .product-information .p-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 0 3.5% 0 0;
+}
+
+.main-container .lab-product-details .form-container form .product-information .p-desc {
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 1.5% 0;
+}
+
+.main-container .lab-product-details .form-container form .product-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--black);
+  padding: 1.5% 3%;
+}
+
+.main-container .lab-product-details .form-container form .product-size p {
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 0 3.5% 0 0;
+}
+
+.main-container .lab-product-details .form-container form .product-size label {
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0 1.5% 0 0;
+}
+
+.main-container .lab-product-details .form-container form .product-size input {
+  margin: 0 3% 0 0;
+}
+
+.main-container .lab-product-details .form-container form .product-finishing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--black);
+  padding: 1.5% 3%;
+}
+
+.main-container .lab-product-details .form-container form .product-finishing p {
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 0 3.5% 0 0;
+}
+
+.main-container .lab-product-details .form-container form .product-finishing label {
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0 1.5% 0 0;
+}
+
+.main-container .lab-product-details .form-container form .product-finishing input {
+  margin: 0 1.5% 0 0;
+}
+
+.main-container .lab-product-details .form-container .add-to-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5% 3%;
+}
+
+.main-container .lab-product-details .form-container .add-to-cart p span {
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 0 3.5% 0 0;
+}
+
+.main-container .lab-product-details .form-container .add-to-cart p span:last-of-type {
+  margin: 0 0 0 2.5%;
+}
+
+.main-container .lab-product-details .form-container .add-to-cart p button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid var(--black);
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  font-size: 1.3em;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.main-container .lab-product-details .form-container .add-to-cart p button:hover {
+  background-color: rgba(0, 0, 0, 0.276);
+}
+
+.main-container .lab-product-details .form-container .add-to-cart .atc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  border: none;
+  padding: 2% 3%;
+  font-size: 1.1em;
+  font-weight: 500;
+  background-color: var(--black);
+  color: var(--white);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 2% 0;
+  cursor: pointer;
+}
+
+.main-container .lab-product-details .form-container .add-to-cart .atc span {
+  font-weight: 400;
+}
+
+.main-container .lab-product-details .form-container .add-to-cart .atc:hover {
+  -webkit-transform: scale(0.98, 0.98);
+          transform: scale(0.98, 0.98);
+}
+
+.pre-footer {
+  border-top: 1px solid var(--black);
+}
+/*# sourceMappingURL=thelab-serum.css.map */

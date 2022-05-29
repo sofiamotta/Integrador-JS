@@ -1,0 +1,236 @@
+.main-container{
+
+    width: 100%;
+    height: calc(100vh - 11vh - 7vh - 5vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .serum-container{
+
+        img{
+
+            width: 80%;
+
+        }
+
+    }
+
+    .lab-product-details{
+
+        width: 40vw;
+        height: auto;
+
+        .form-container{
+
+            border: 1px solid var(--black);
+            cursor: default;
+
+            form{
+
+                display: flex;
+                flex-direction: column;
+
+                .base{
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border-bottom: 1px solid var(--black);
+                    font-size: 1.1em;
+                    font-weight: 600;
+                    padding: 1.5% 3%;
+
+                    .selectBase{
+
+                        border: 1px solid var(--black);
+                        margin: 0 3%;
+                        font-size: 1em;
+
+                        option:hover{
+
+                            background-color: coral;
+
+                        }
+                        
+                    }
+
+                }
+
+                .product-information{
+
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 1px solid var(--black);
+                    padding: 1.5% 3%;
+
+                    .p-title{
+
+                        font-size: 1.3em;
+                        font-weight: 600;
+                        padding: 0 3.5% 0 0;
+
+                    }
+
+                    .p-desc{
+
+                        font-size: 1.1em;
+                        font-weight: 500;
+                        padding: 1.5% 0;
+
+                    }
+
+                }
+
+                .product-size{
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border-bottom: 1px solid var(--black);
+                    padding: 1.5% 3%;
+
+                    p{
+
+                        font-size: 1.1em;
+                        font-weight: 600;
+                        padding: 0 3.5% 0 0;
+
+                    }
+
+                    label{
+
+                        font-size: 1em;
+                        font-weight: 500;
+                        margin: 0 1.5% 0 0;
+
+                    }
+
+                    input{
+
+                        margin: 0 3% 0 0;
+
+                    }
+
+                }
+
+                .product-finishing{
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border-bottom: 1px solid var(--black);
+                    padding: 1.5% 3%;
+
+                    p{
+
+                        font-size: 1.1em;
+                        font-weight: 600;
+                        padding: 0 3.5% 0 0;
+
+                    }
+
+                    label{
+
+                        font-size: 1em;
+                        font-weight: 500;
+                        margin: 0 1.5% 0 0;
+
+                    }
+
+                    input{
+
+                        margin: 0 1.5% 0 0;
+
+                    }
+
+                }
+
+            }
+
+            .add-to-cart{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1.5% 3%;
+                // background-color: aquamarine;
+
+                p{
+
+                    span{
+
+                        font-size: 1.1em;
+                        font-weight: 600;
+                        padding: 0 3.5% 0 0;
+
+                    }
+
+                    span:last-of-type{
+
+                        margin: 0 0 0 2.5%;
+
+                    }
+
+                    button{
+
+                        appearance: none;
+                        border: 1px solid var(--black);
+                        width: 30px;
+                        height: 30px;
+                        background-color: var(--white);
+                        font-size: 1.3em;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: 0.2s;
+
+                    }
+
+                    button:hover{
+
+                        background-color: rgba(0, 0, 0, 0.276);
+
+                    }
+
+                }
+
+                .atc {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 70%;
+                    border: none;
+                    padding: 2% 3%;
+                    font-size: 1.1em;
+                    font-weight: 500;
+                    background-color: var(--black);
+                    color: var(--white);
+                    transition: 0.3s;
+                    margin: 2% 0;
+                    cursor: pointer;
+
+                    span{
+
+                        font-weight: 400;
+
+                    }
+                }
+
+                .atc:hover {
+
+                    transform: scale(0.98, 0.98);
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.pre-footer{
+
+    border-top: 1px solid var(--black);
+
+}

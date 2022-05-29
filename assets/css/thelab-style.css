@@ -22,11 +22,11 @@
 
 .the-lab-container {
   width: 100%;
-  height: 100vh;
+  margin: 0 0 5%;
 }
 
-.the-lab-container .banner-space {
-  height: calc(7vh + 5vh);
+.the-lab-container .blank-space {
+  height: calc(5vh + 7vh);
 }
 
 .the-lab-container .title-container-tl {
@@ -34,47 +34,128 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: bisque;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 0 0 2.5%;
   border-bottom: 1px solid var(--black);
 }
 
-.the-lab-container .title-container-tl a {
-  margin: 0 1.5% 0 0;
-}
-
-.the-lab-container .title-container-tl a span {
-  font-size: 2.4em;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  cursor: pointer;
-  font-variation-settings: 'wght' 200;
-}
-
-.the-lab-container .title-container-tl a span:hover {
-  -webkit-transform: translate(-10px);
-          transform: translate(-10px);
-}
-
-.the-lab-container .title-container-tl .text-container h1 {
+.the-lab-container .title-container-tl h1 {
   font-size: 2.2em;
 }
 
 .the-lab-container .main-container {
   width: 100%;
-  height: calc(100vh - 7vh - 5vh - 11vh);
 }
 
 .the-lab-container .main-container .lab-product-container {
   width: 100%;
-  height: calc(100vh - 7vh - 5vh - 11vh -10vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.5%;
+}
+
+.the-lab-container .main-container .lab-product-container img {
+  width: 7%;
+  margin-bottom: 2.5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.the-lab-container .main-container .lab-product-container a {
+  width: 20vw;
+  border: none;
+  padding: 1% 1.5%;
+  font-size: 1.2em;
+  font-weight: 600;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.the-lab-container .main-container .lab-product-container a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.the-lab-container .main-container .lab-product-container a:hover ~ img {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  -webkit-transform: scale(99%);
+          transform: scale(99%);
+}
+
+.main-product-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+}
+
+.main-product-container .main-product-title {
+  padding: 2% 0;
+}
+
+.main-product-container .main-product-title h2 {
+  text-align: center;
+  -webkit-text-decoration: underline wavy 4px var(--black);
+          text-decoration: underline wavy 4px var(--black);
+  text-underline-offset: 10px;
+  font-size: 2.2em;
+}
+
+.main-product-container .new-products-container {
+  width: 100%;
+  border-top: 1px solid var(--black);
+  margin: 0 0 2.5%;
+}
+
+.main-product-container .new-products-container .new-product-title {
+  padding: 1.5% 0;
+  border-bottom: 1px solid var(--black);
+  background-color: var(--greenblue);
+  margin: 0 0 5%;
+}
+
+.main-product-container .new-products-container .new-product-title h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.main-product-container .new-products-container .product-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,152 +166,247 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin: 2.5% 0;
+  margin-bottom: 2.5%;
 }
 
-.the-lab-container .main-container .lab-product-container .img-container-01 {
+.main-product-container .new-products-container .product-container .product-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20vw;
-  z-index: 5;
-  margin-right: 5%;
+  margin: 0 5%;
 }
 
-.the-lab-container .main-container .lab-product-container .img-container-01 img {
+.main-product-container .new-products-container .product-container .product-item .product-img {
   width: 25%;
-  margin-bottom: 10%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
-.the-lab-container .main-container .lab-product-container .img-container-01 button {
-  width: 70%;
-  border: none;
-  padding: 2.5% 4%;
-  font-size: 1em;
-  font-weight: 600;
-  background-color: var(--white);
-  border: 1px solid var(--black);
-  color: var(--black);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.the-lab-container .main-container .lab-product-container .img-container-01 button:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.the-lab-container .main-container .lab-product-container .img-container-01 button:hover ~ img {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
-  -webkit-transform: scale(99%);
-          transform: scale(99%);
-}
-
-.the-lab-container .main-container .lab-product-container .img-container-02 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 20vw;
-  z-index: 5;
-  margin-right: 5%;
-}
-
-.the-lab-container .main-container .lab-product-container .img-container-02 img {
-  width: 55%;
-  margin-bottom: 10%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.the-lab-container .main-container .lab-product-container .img-container-02 button {
-  width: 70%;
-  border: none;
-  padding: 2.5% 4%;
-  font-size: 1em;
-  font-weight: 600;
-  background-color: var(--white);
-  border: 1px solid var(--black);
-  color: var(--black);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.the-lab-container .main-container .lab-product-container .img-container-02 button:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.the-lab-container .main-container .lab-product-container .img-container-02 button:hover ~ img {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
-  -webkit-transform: scale(99%);
-          transform: scale(99%);
-}
-
-.the-lab-container .main-container .lab-product-container .img-container-01.is-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.main-product-container .new-products-container .product-container .product-item .product-info {
   width: 100%;
-  z-index: 5;
-  margin-right: 5%;
 }
 
-.the-lab-container .main-container .lab-product-container .img-container-01.is-active img {
-  width: 10%;
+.main-product-container .new-products-container .product-container .product-item .product-info h2 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 10%;
+  margin-bottom: 2.5%;
+  cursor: default;
 }
 
-.the-lab-container .main-container .lab-product-container .img-container-01.is-active button {
-  display: none;
+.main-product-container .new-products-container .product-container .product-item .product-info p {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 5%;
+  cursor: default;
 }
 
-.the-lab-container .main-container .lab-product-container .img-container-02.is-inactive {
-  display: none;
+.main-product-container .new-products-container .product-container .product-item .product-info button {
+  width: 100%;
+  border: none;
+  padding: 4%;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.the-lab-container .main-container .lab-product-container .img-container-02.is-active {
-  border: 3px solid pink;
+.main-product-container .new-products-container .product-container .product-item .product-info button:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
-.the-lab-container .main-container .lab-product-container .img-container-01.is-inactive {
-  display: none;
+.main-product-container .all-products-container {
+  width: 100%;
+  border-top: 1px solid var(--black);
+}
+
+.main-product-container .all-products-container .all-product-title {
+  padding: 1.5% 0;
+  margin: 0 0 5%;
+  border-bottom: 1px solid var(--black);
+}
+
+.main-product-container .all-products-container .all-product-title h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.main-product-container .all-products-container .product-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2.5%;
+}
+
+.main-product-container .all-products-container .product-container .product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10% 10%;
+}
+
+.main-product-container .all-products-container .product-container .product-item .product-img {
+  width: 25%;
+}
+
+.main-product-container .all-products-container .product-container .product-item .product-info {
+  width: 100%;
+}
+
+.main-product-container .all-products-container .product-container .product-item .product-info h2 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 10%;
+  margin-bottom: 2.5%;
+  cursor: default;
+}
+
+.main-product-container .all-products-container .product-container .product-item .product-info p {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 5%;
+  cursor: default;
+}
+
+.main-product-container .all-products-container .product-container .product-item .product-info button {
+  width: 100%;
+  border: none;
+  padding: 4%;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main-product-container .all-products-container .product-container .product-item .product-info button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+@media (max-width: 425px) {
+  .the-lab-container .title-container-tl h1 {
+    font-size: 1.3em;
+  }
+  .the-lab-container .main-container {
+    width: 100vw;
+    padding: 0;
+  }
+  .the-lab-container .main-container .lab-product-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .the-lab-container .main-container .lab-product-container img {
+    width: 30%;
+    margin: 10% 0 0 0;
+  }
+  .the-lab-container .main-container .lab-product-container a {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    padding: 0;
+    margin: 5% 2.5%;
+    font-size: 1em;
+    padding: 1.5% 3%;
+  }
+  .main-product-container .main-product-title h2 {
+    font-size: 1.4em;
+    text-decoration: none;
+  }
+  .main-product-container .new-products-container .new-product-title {
+    padding: 3% 0;
+  }
+  .main-product-container .new-products-container .new-product-title h2 {
+    font-size: 1.4em;
+  }
+  .main-product-container .new-products-container .product-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .main-product-container .new-products-container .product-container .product {
+    margin: 10% 5%;
+  }
+  .main-product-container .all-products-container .all-product-title h2 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .the-lab-container .title-container-tl h1 {
+    font-size: 1.8em;
+  }
+  .the-lab-container .main-container {
+    width: 100%;
+  }
+  .the-lab-container .main-container .lab-product-container {
+    width: 100%;
+  }
+  .the-lab-container .main-container .lab-product-container img {
+    width: 20%;
+  }
+  .the-lab-container .main-container .lab-product-container a {
+    width: 20vw;
+  }
+  .main-product-container .main-product-title h2 {
+    font-size: 1.4em;
+    text-decoration: none;
+  }
+  .main-product-container .new-products-container .new-product-title {
+    padding: 3% 0;
+  }
+  .main-product-container .new-products-container .new-product-title h2 {
+    font-size: 1.2em;
+  }
+  .main-product-container .new-products-container .product-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 /*# sourceMappingURL=thelab-style.css.map */

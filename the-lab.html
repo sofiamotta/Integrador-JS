@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./assets/css/thelab-style.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>We Care: The Lab</title>
 </head>
+
 <body>
 
     <header class="header-container">
@@ -27,17 +30,16 @@
                 <button class="mobile-hamb-open"><span class="mobile-menu material-symbols-outlined">menu</span></button>
 
                 <div class="mobile-hamb-menu">
-                    
+
                     <div class="mobile-list-menu">
-                        
+
                         <a href="index.html">Home</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Account</a>
-                        
+                        <a href="the-lab.html#productPage">Products</a>
+
                     </div>
-                    
+
                     <button class="mobile-hamb-close"><span class="material-symbols-outlined">close</span></button>
-                
+
                 </div>
 
                 <div class="mobile-logo">
@@ -52,7 +54,7 @@
 
                     <ul class="mobile-cart-list">
 
-                        <li><a href="#">Cart <span>(0)</span></a></li>
+                        <li><a href="#">Cart ( <span class="totalItems"></span> )</a></li>
 
                     </ul>
 
@@ -63,33 +65,32 @@
             <div class="large-screens-header">
 
                 <div class="nav-links-one">
-    
+
                     <ul>
-    
+
                         <li><a href="the-lab.html">The Lab</a></li>
-                        <li><a href="">Contact Us</a></li>
-    
+                        <li><a href="the-lab.html#productPage">Products</a></li>
+
                     </ul>
-    
+
                 </div>
-    
+
                 <div class="logo">
-    
+
                     <a class="logo-link" href="index.html">
                         <h1>We Care <span>Co.</span></h1>
                     </a>
-    
+
                 </div>
-    
+
                 <div class="nav-links-two">
-    
+
                     <ul>
-    
-                        <li><a href="">Account</a></li>
-                        <li><a href="">Cart <span>(0)</span></a></li>
-    
+
+                        <li><a href="">Cart ( <span class="totalItems"></span> )</a></li>
+
                     </ul>
-    
+
                 </div>
 
             </div>
@@ -97,21 +98,15 @@
         </nav>
 
     </header>
-    
+
     <section class="the-lab-container">
 
-        <div class="banner-space"></div>
+        <div class="blank-space"></div>
 
         <div class="title-container-tl">
-            
-            <a href="the-lab.html"><span class="material-symbols-outlined">arrow_back</span></a>
 
-            <div class="text-container">
-
-                <h1>The Lab</h1>
-                <p>Choose your desired product</p>
-
-            </div>
+            <h1>The Lab</h1>
+            <p>Choose your desired product</p>
 
         </div>
 
@@ -119,25 +114,8 @@
 
             <div class="lab-product-container">
 
-                <div class="img-container-01 serum">
-
-                    <button class="btn-serum">Start creating your serum</button>
-                    <img src="./assets/img/product-default.png">
-
-                </div>
-
-                <div class="img-container-02 cream">
-
-                    <button class="btn-cream">Start creating your cream</button>
-                    <img src="./assets/img/product-default-02.png">
-
-                </div>
-
-            </div>
-
-            <div class="lab-product-details">
-
-
+                <a href="the-lab-serum.html">Start creating your serum</a>
+                <img src="./assets/img/product-default.png">
 
             </div>
 
@@ -145,21 +123,77 @@
 
     </section>
 
-    <div class="main-product-container">
+    <div id="productPage" class="main-product-container">
 
-        <div class="title-container-tl">
+        <div class="main-product-title">
 
+            <h2>Check out our products</h2>
 
         </div>
 
         <div class="new-products-container">
 
-            <div class="title-container-tl">
+            <div class="new-product-title">
 
+                <h2>Living Citric Collection</h2>
 
             </div>
 
             <div class="product-container">
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/high-lavender-product-LA.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>High Lavender</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('High Lavender', 12.99, 1)" type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/mint-mosturizing-product-LA.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>Mint Mosturizing</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('Mint Mosturizing', 12.99, 1)" type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/refresh-product-LA.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>Re-fresh Now</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('Re-fresh Now', 12.99, 1)" type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
             </div>
@@ -168,13 +202,157 @@
 
         <div class="all-products-container">
 
-            <div class="title-container-tl">
+            <div class="all-product-title">
 
+                <h2>The Good ol' and reliable ones</h2>
 
             </div>
 
             <div class="product-container">
 
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/grapefruit-product.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>Grapefruit L</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('grapefruit', 12.99, 1)" type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/quava-green-product.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>Quava Green</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('quava', 12.99, 1)" type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/light-face-product.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>Light Skin</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('lightface', 12.99, 1)"type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/olog-tea-product.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>Olong Tea</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('olongtea', 12.99, 1)"type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/peach-beach-product.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>Goodbye Dryness</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('Goodbye Dryness', 12.99, 1)" type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/peach-beach-product.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>The Freshness</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('The Freshness', 12.99, 1)" type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/peach-beach-product.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>Watermelon Kiss</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('Watermelon Kiss', 12.99, 1)" type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <div class="product-item">
+
+                        <img src="/assets/img/peach-beach-product.png" class="product-img">
+
+                        <div class="product-info">
+
+                            <h2>Crystal Peach</h2>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('Crystal Peach', 12.99, 1)" type="button">Add to Cart</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
             </div>
@@ -183,11 +361,39 @@
 
     </div>
 
-    
+    <section class="pre-footer">
+
+        <img src="/assets/img/slogan-spin.png">
+
+    </section>
+
+    <footer>
+
+        <ul class="footer-links">
+
+            <li><a href="index.html">We Care <span>Co.</span></a></li>
+            <li><a href="the-lab.html">The Lab</a></li>
+            <li><a href="the-lab.html#productPage">Products</a></li>
+
+        </ul>
+
+        <div class="footer-banner">
+
+            <p>© WE CARE CO. ALL RIGHTS RESERVED.</p>
+
+        </div>
+
+    </footer>
+
+
     <!-- JS Scripts -->
 
-    <script src="./js/script.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/cart.js"></script>
+    <!-- <script src="./js/thelab-select-product.js"></script> -->
+    <!-- <script src="./js/quantity-button.js"></script> -->
     <script src="https://kit.fontawesome.com/684008e375.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

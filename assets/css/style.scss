@@ -639,7 +639,7 @@ footer {
         border-bottom: 1px solid var(--black);
 
         li {
-            width: 25%;
+            width: calc(100%/3);
             height: 7vh;
             display: flex;
             align-items: center;
@@ -647,6 +647,7 @@ footer {
             border-left: 1px solid var(--black);
             font-weight: 500;
             cursor: default;
+
         }
 
         li:first-of-type {

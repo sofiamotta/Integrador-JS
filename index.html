@@ -33,8 +33,7 @@
                     <div class="mobile-list-menu">
                         
                         <a href="the-lab.html">The Lab</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Account</a>
+                        <a href="the-lab.html#productPage">Products</a>
                         
                     </div>
                     
@@ -54,7 +53,7 @@
 
                     <ul class="mobile-cart-list">
 
-                        <li><a href="#">Cart <span>(0)</span></a></li>
+                        <li><a href="#">Cart ( <span class="totalItems"></span> )</a></li>
 
                     </ul>
 
@@ -69,7 +68,7 @@
                     <ul>
     
                         <li><a href="the-lab.html">The Lab</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="the-lab.html#productPage">Products</a></li>
     
                     </ul>
     
@@ -87,8 +86,7 @@
     
                     <ul>
     
-                        <li><a href="">Account</a></li>
-                        <li><a href="">Cart <span>(0)</span></a></li>
+                        <li><a href="">Cart ( <span class="totalItems"></span> )</a></li>
     
                     </ul>
     
@@ -169,8 +167,8 @@
                         <div class="product-info">
 
                             <h2>Grapefruit L</h2>
-                            <p class="">from $12.99</p>
-                            <button class="" type="button">Add to Cart</button>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('grapefruit', 12.99, 1)" type="button">Add to Cart</button>
 
                         </div>
 
@@ -187,8 +185,8 @@
                         <div class="product-info">
 
                             <h2>Quava Green</h2>
-                            <p class="">from $12.99</p>
-                            <button class="" type="button">Add to Cart</button>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('quava', 12.99, 1)" type="button">Add to Cart</button>
 
                         </div>
 
@@ -205,8 +203,8 @@
                         <div class="product-info">
 
                             <h2>Light Skin</h2>
-                            <p class="">from $12.99</p>
-                            <button class="" type="button">Add to Cart</button>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('lightface', 12.99, 1)"type="button">Add to Cart</button>
 
                         </div>
 
@@ -223,8 +221,8 @@
                         <div class="product-info">
 
                             <h2>Olong Tea</h2>
-                            <p class="">from $12.99</p>
-                            <button class="" type="button">Add to Cart</button>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('olongtea', 12.99, 1)"type="button">Add to Cart</button>
 
                         </div>
 
@@ -241,8 +239,8 @@
                         <div class="product-info">
 
                             <h2>Peach Beach</h2>
-                            <p class="">from $12.99</p>
-                            <button class="" type="button">Add to Cart</button>
+                            <p class="">$12.99</p>
+                            <button onclick="addProduct('peachbeach', 12.99, 1)" type="button">Add to Cart</button>
 
                         </div>
 
@@ -274,7 +272,7 @@
             <div class="promotional-header">
 
                 <h1>Living Citric Collection</h1>
-                <p><a href="the-lab.html">Shop Now</a> <span class="material-symbols-outlined">trending_flat</span></p>
+                <p><a href="the-lab.html#productPage">Shop Now</a> <span class="material-symbols-outlined">trending_flat</span></p>
 
             </div>
 
@@ -291,7 +289,7 @@
                         Facilis hic facere maxime mollitia expedita voluptatem.
                     </p>
 
-                    <button><a href="the-lab.html">Shop Now</a></button>
+                    <button><a href="the-lab.html#productPage">Shop Now</a></button>
                 </div>
             </div>
 
@@ -311,8 +309,7 @@
 
             <li><a href="index.html">We Care <span>Co.</span></a></li>
             <li><a href="the-lab.html">The Lab</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Account</a></li>
+            <li><a href="the-lab.html#productPage">Products</a></li>
 
         </ul>
 
@@ -326,7 +323,9 @@
 
     <!-- JS Scripts -->
 
-    <script src="./js/script.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/product-slider.js"></script>
+    <script src="./js/cart.js"></script>
     <script src="https://kit.fontawesome.com/684008e375.js" crossorigin="anonymous"></script>
 
 </body>
