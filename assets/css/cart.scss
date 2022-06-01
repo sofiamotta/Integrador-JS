@@ -1,0 +1,149 @@
+.cart-container{
+
+    .cart-title-container {
+    
+        height: 11vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 0 0 2.5%;
+        border-top: 1px solid var(--black);
+        border-bottom: 1px solid var(--black);
+    
+        h1 {
+    
+            font-size: 2.2em;
+    
+        }
+    
+    }
+
+    .cart-alert-container{
+
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--gray);
+
+        }
+
+        span{
+
+            margin: 1% 0;
+            font-size: 3em;
+            color: var(--gray);
+            font-variation-settings: 'wght' 300;
+
+        }
+
+        a{
+
+            border: 1px solid var(--black);
+            color: var(--black);
+            padding: 0.5% 1.5%;
+            font-weight: 500;
+            transition: 0.2s;
+
+        }
+
+        a:hover{
+
+            background-color: var(--black);
+            color: var(--white);
+
+        }
+
+    }
+
+    .cart-alert-container.is-active{
+
+        display: none;
+
+    }
+
+    .cart-product-container{
+        
+        .cart-product{
+
+            width: 35vw;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5% 5%;
+            border-bottom: 1px solid var(--black);
+            border-right: 1px solid var(--black);
+            margin: 0%;
+
+            img{
+
+                width: 5%;
+
+            }
+
+            button{
+
+                appearance: none;
+                border: 1px solid var(--black);
+                width: 20%;
+                height: 5vh;
+                background-color: var(--white);
+                font-size: 0.9em;
+                font-weight: 500;
+                cursor: pointer;
+                transition: 0.2s;
+
+            }
+
+            button:hover{
+
+                background-color: var(--black);
+                color: var(--white);
+
+            }
+
+            .cart-product-content{
+
+                .cart-product-name{
+
+                    font-size: 1.1em;
+                    font-weight: 700;
+                    padding: 1.5% 0;
+
+                }
+
+                .cart-product-total-price{
+
+                    font-size: 1.2em;
+                    font-weight: 400;
+
+                    span{
+
+                        font-weight: 600;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .cart-product:last-of-type{
+
+            border-bottom: none;
+
+        }
+    }
+
+}

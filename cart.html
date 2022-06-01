@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/thelab-serum.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <title>We Care: Cart</title>
+</head>
+<body>
+    
+    <header class="header-container">
+
+        <div class="header-banner">
+
+            <p>free worldwide shipping on orders over $100</p>
+
+        </div>
+
+        <nav>
+
+            <div class="mobile-header">
+
+                <button class="mobile-hamb-open"><span class="mobile-menu material-symbols-outlined">menu</span></button>
+
+                <div class="mobile-hamb-menu">
+                    
+                    <div class="mobile-list-menu">
+                        
+                        <a href="the-lab.html">The Lab</a>
+                        <a href="the-lab.html#productPage">Products</a>
+                        
+                    </div>
+                    
+                    <button class="mobile-hamb-close"><span class="material-symbols-outlined">close</span></button>
+                
+                </div>
+
+                <div class="mobile-logo">
+
+                    <a class="mobile-logo-link" href="index.html">
+                        <h1>We Care <span>Co.</span></h1>
+                    </a>
+
+                </div>
+
+                <div class="mobile-cart">
+
+                    <ul class="mobile-cart-list">
+
+                        <li><a href="#">Cart ( <span class="totalItems"></span> )</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="large-screens-header">
+
+                <div class="nav-links-one">
+    
+                    <ul>
+    
+                        <li><a href="the-lab.html">The Lab</a></li>
+                        <li><a href="the-lab.html#productPage">Products</a></li>
+    
+                    </ul>
+    
+                </div>
+    
+                <div class="logo">
+    
+                    <a class="logo-link" href="index.html">
+                        <h1>We Care <span>Co.</span></h1>
+                    </a>
+    
+                </div>
+    
+                <div class="nav-links-two">
+    
+                    <ul>
+    
+                        <li><a href="">Cart ( <span class="totalItems"></span> )</a></li>
+    
+                    </ul>
+    
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="cart-container">
+        
+        <div class="blank-space"></div>
+
+        <div class="cart-title-container">
+            
+            <h1>Cart</h1>
+
+        </div>
+
+        <div class="cart-alert-container" id="emptyCart">
+
+            <p>It seems like you haven't added any product yet</p>
+            <span class="material-symbols-outlined">production_quantity_limits</span>
+            <a href="./the-lab.html">Go Shop</a>
+
+        </div>
+
+        <div class="cart-product-container" id="cartProductContainer">
+
+        </div>
+
+    </section>
+
+    <!-- JS Code -->
+    <script src="./js/cart.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
+</body>
+</html>

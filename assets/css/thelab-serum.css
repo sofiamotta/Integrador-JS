@@ -1,4 +1,4 @@
-.main-container {
+.the-lab-container .main-container {
   width: 100%;
   height: calc(100vh - 11vh - 7vh - 5vh);
   display: -webkit-box;
@@ -16,21 +16,21 @@
           align-items: center;
 }
 
-.main-container .serum-container img {
+.the-lab-container .main-container .serum-container img {
   width: 80%;
 }
 
-.main-container .lab-product-details {
+.the-lab-container .main-container .lab-product-details {
   width: 40vw;
   height: auto;
 }
 
-.main-container .lab-product-details .form-container {
+.the-lab-container .main-container .lab-product-details .form-container {
   border: 1px solid var(--black);
   cursor: default;
 }
 
-.main-container .lab-product-details .form-container form {
+.the-lab-container .main-container .lab-product-details .form-container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +40,7 @@
           flex-direction: column;
 }
 
-.main-container .lab-product-details .form-container form .base {
+.the-lab-container .main-container .lab-product-details .form-container form .base {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,17 +57,17 @@
   padding: 1.5% 3%;
 }
 
-.main-container .lab-product-details .form-container form .base .selectBase {
+.the-lab-container .main-container .lab-product-details .form-container form .base .selectBase {
   border: 1px solid var(--black);
   margin: 0 3%;
   font-size: 1em;
 }
 
-.main-container .lab-product-details .form-container form .base .selectBase option:hover {
+.the-lab-container .main-container .lab-product-details .form-container form .base .selectBase option:hover {
   background-color: coral;
 }
 
-.main-container .lab-product-details .form-container form .product-information {
+.the-lab-container .main-container .lab-product-details .form-container form .product-information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,19 +79,19 @@
   padding: 1.5% 3%;
 }
 
-.main-container .lab-product-details .form-container form .product-information .p-title {
+.the-lab-container .main-container .lab-product-details .form-container form .product-information .p-title {
   font-size: 1.3em;
   font-weight: 600;
   padding: 0 3.5% 0 0;
 }
 
-.main-container .lab-product-details .form-container form .product-information .p-desc {
+.the-lab-container .main-container .lab-product-details .form-container form .product-information .p-desc {
   font-size: 1.1em;
   font-weight: 500;
   padding: 1.5% 0;
 }
 
-.main-container .lab-product-details .form-container form .product-size {
+.the-lab-container .main-container .lab-product-details .form-container form .product-size {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,23 +106,23 @@
   padding: 1.5% 3%;
 }
 
-.main-container .lab-product-details .form-container form .product-size p {
+.the-lab-container .main-container .lab-product-details .form-container form .product-size p {
   font-size: 1.1em;
   font-weight: 600;
   padding: 0 3.5% 0 0;
 }
 
-.main-container .lab-product-details .form-container form .product-size label {
+.the-lab-container .main-container .lab-product-details .form-container form .product-size label {
   font-size: 1em;
   font-weight: 500;
   margin: 0 1.5% 0 0;
 }
 
-.main-container .lab-product-details .form-container form .product-size input {
+.the-lab-container .main-container .lab-product-details .form-container form .product-size input {
   margin: 0 3% 0 0;
 }
 
-.main-container .lab-product-details .form-container form .product-finishing {
+.the-lab-container .main-container .lab-product-details .form-container form .product-finishing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,23 +137,23 @@
   padding: 1.5% 3%;
 }
 
-.main-container .lab-product-details .form-container form .product-finishing p {
+.the-lab-container .main-container .lab-product-details .form-container form .product-finishing p {
   font-size: 1.1em;
   font-weight: 600;
   padding: 0 3.5% 0 0;
 }
 
-.main-container .lab-product-details .form-container form .product-finishing label {
+.the-lab-container .main-container .lab-product-details .form-container form .product-finishing label {
   font-size: 1em;
   font-weight: 500;
   margin: 0 1.5% 0 0;
 }
 
-.main-container .lab-product-details .form-container form .product-finishing input {
+.the-lab-container .main-container .lab-product-details .form-container form .product-finishing input {
   margin: 0 1.5% 0 0;
 }
 
-.main-container .lab-product-details .form-container .add-to-cart {
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,20 +164,21 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   padding: 1.5% 3%;
 }
 
-.main-container .lab-product-details .form-container .add-to-cart p span {
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart p span {
   font-size: 1.1em;
   font-weight: 600;
   padding: 0 3.5% 0 0;
 }
 
-.main-container .lab-product-details .form-container .add-to-cart p span:last-of-type {
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart p span:last-of-type {
   margin: 0 0 0 2.5%;
 }
 
-.main-container .lab-product-details .form-container .add-to-cart p button {
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart p button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -192,11 +193,11 @@
   transition: 0.2s;
 }
 
-.main-container .lab-product-details .form-container .add-to-cart p button:hover {
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart p button:hover {
   background-color: rgba(0, 0, 0, 0.276);
 }
 
-.main-container .lab-product-details .form-container .add-to-cart .atc {
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart .atc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,13 +217,25 @@
   cursor: pointer;
 }
 
-.main-container .lab-product-details .form-container .add-to-cart .atc span {
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart .atc span {
   font-weight: 400;
 }
 
-.main-container .lab-product-details .form-container .add-to-cart .atc:hover {
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart .atc:hover {
   -webkit-transform: scale(0.98, 0.98);
           transform: scale(0.98, 0.98);
+}
+
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart #addedToCart {
+  display: none;
+}
+
+.the-lab-container .main-container .lab-product-details .form-container .add-to-cart #addedToCart.is-active {
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .pre-footer {
