@@ -5,7 +5,7 @@ let products = []; //Creamos un array el cual guardará todos los ítems
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  if(localStorage.getItem('products')){
+  if (localStorage.getItem('products')) {
 
     products = JSON.parse(localStorage.getItem('products'))
     setCount();
@@ -43,7 +43,7 @@ const setCount = () => {
 const totalPrice = () => {
 
   let totalCart = 0; //Se iniciará en 0, puesto que por defecto no habrá items dentro del Cart, por ende el valor será 0.
-  
+
   //Se recorre products y se actualiza el precio, tal que corresponda con la cantidad.
   for (const i in products) {
 
@@ -56,30 +56,34 @@ const totalPrice = () => {
 const productsList = () => {
 
   //agrego el producto al cart
-  cartProductContainer.innerHTML = products.map((product) => {
-    let productPrice = product.count * product.price; // Precio * canitdad = precio total por item
-    return `
-      <div class="cart-product">
-      <img src="./assets/img/product-default.png">
-        <div class="cart-product-content">
-          <p class="cart-product-name">${product.product}</p>
-          <p class="cart-product-total-price">${product.count} x <span> $ ${productPrice}</span></p>
+
+  try {
+    cartProductContainer.innerHTML = products.map((product) => {
+      let productPrice = product.count * product.price; // Precio * canitdad = precio total por item
+      return `
+        <div class="cart-product">
+        <img src="./assets/img/product-default.png">
+          <div class="cart-product-content">
+            <p class="cart-product-name">${product.product}</p>
+            <p class="cart-product-total-price">${product.count} x <span> $ ${productPrice}</span></p>
+          </div>
+          <button onclick="deleteProduct('${product.product}')">Delete Item</button>
         </div>
-        <button onclick="deleteProduct('${product.product}')">Delete Item</button>
-      </div>
-    `;
-  }).join('');
-
-  if(products.length === 0){
-
-    emptyCartContainer.classList.remove('is-active');
-
-  }else{
-
-    emptyCartContainer.classList.add('is-active');
-
+      `;
+    }).join('');
+    
+    if (products.length === 0) {
+  
+      emptyCartContainer.classList.remove('is-active');
+  
+    } else {
+  
+      emptyCartContainer.classList.add('is-active');
+  
+    }
+  } catch {
   }
-
+  
   localStorage.setItem('products', JSON.stringify(products))
   setCount();
 
@@ -123,11 +127,11 @@ const addProduct = (product, price, count) => {
   productsList();
 };
 
-function deleteProduct(item){
-  
-  for(const i in products){
+function deleteProduct(item) {
 
-    if(item === products[i].product){
+  for (const i in products) {
+
+    if (item === products[i].product) {
 
       const index = products.indexOf(item);
       products.splice(index, 1)
@@ -215,7 +219,7 @@ function totalUpdate() {
 
 //Con esta función se actualiza en tiempo real el form, actualizando el nombre del producto en el html, y el precio total segun la cantidad y el tamaño del producto.
 function updateForm() {
-
+  
   const form = document.getElementById('formSerum'); //Declaro el objeto form
   const radios = form.size; //Declaro radios como cada uno de los input radios existentes
   const selector = document.querySelectorAll('select'); //Declaro selector como el input tipo select
@@ -248,4 +252,9 @@ function updateForm() {
 
 }
 
-updateForm();
+try{
+  const foo = document.getElementById('formSerum'); 
+  updateForm();
+}
+catch{
+}

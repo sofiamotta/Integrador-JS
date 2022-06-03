@@ -8,8 +8,8 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./assets/css/thelab-style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/thelab-style.css">
     <title>We Care: The Lab</title>
 </head>
 
@@ -208,9 +208,52 @@
 
             </div>
 
+            <div class="all-product-form-container">
+
+                <div class="form-title-container">
+
+                    <p>Sort our products based on your necessities</p>
+
+                </div>
+
+                <div class="form-container">
+
+                    <form id="formFilter">
+        
+                        <label for="dry">
+        
+                            For dry skins
+                            <input type="radio" name="typeSerum" id="dry" value="dry">
+        
+                        </label>
+        
+                        <label for="nutrient">
+        
+                            In need of nutrients
+                            <input type="radio" name="typeSerum" id="nutrient" value="nutrient">
+        
+                        </label>
+        
+                        <label for="neutral">
+        
+                            Want something neutral
+                            <input type="radio" name="typeSerum" id="neutral" value="neutral">
+        
+                        </label>
+                        
+                    </form>
+                    
+                    <button onclick="resetFilter()">Select All</button>
+
+                </div>
+
+
+            </div>
+
+
             <div class="product-container">
 
-                <div class="product">
+                <div class="product dry productSort sa">
 
                     <div class="product-item">
 
@@ -228,7 +271,7 @@
 
                 </div>
 
-                <div class="product">
+                <div class="product dry productSort sa">
 
                     <div class="product-item">
 
@@ -246,7 +289,7 @@
 
                 </div>
 
-                <div class="product">
+                <div class="product neutral productSort sa">
 
                     <div class="product-item">
 
@@ -264,7 +307,7 @@
 
                 </div>
 
-                <div class="product">
+                <div class="product neutral productSort sa">
 
                     <div class="product-item">
 
@@ -282,7 +325,7 @@
 
                 </div>
 
-                <div class="product">
+                <div class="product neutral productSort sa">
 
                     <div class="product-item">
 
@@ -300,7 +343,7 @@
 
                 </div>
 
-                <div class="product">
+                <div class="product nutrient productSort sa">
 
                     <div class="product-item">
 
@@ -318,7 +361,7 @@
 
                 </div>
 
-                <div class="product">
+                <div class="product nutrient productSort sa">
 
                     <div class="product-item">
 
@@ -336,7 +379,7 @@
 
                 </div>
 
-                <div class="product">
+                <div class="product dry productSort sa">
 
                     <div class="product-item">
 
@@ -353,7 +396,6 @@
                     </div>
 
                 </div>
-
 
             </div>
 
@@ -388,6 +430,7 @@
 
     <!-- JS Scripts -->
 
+    <script src="./js/sort-products.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/cart.js"></script>
     <script src="https://kit.fontawesome.com/684008e375.js" crossorigin="anonymous"></script>
