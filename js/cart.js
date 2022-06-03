@@ -8,18 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if(localStorage.getItem('products')){
 
     products = JSON.parse(localStorage.getItem('products'))
+    setCount();
     productsList();
 
   }
 
 })
-
-//Necesitamos que antes de agregar productos, el contador dentro de (Cart) esté en 0. (Cada cart)
-for (let i in totalItems) {
-
-  totalItems[i].innerHTML = "0";
-
-}
 
 //Con esta función se hará la cuenta de cuántos ítems hay en total en toda la página.
 const setCount = () => {
@@ -60,7 +54,7 @@ const totalPrice = () => {
 };
 
 const productsList = () => {
-  
+
   //agrego el producto al cart
   cartProductContainer.innerHTML = products.map((product) => {
     let productPrice = product.count * product.price; // Precio * canitdad = precio total por item
@@ -172,8 +166,6 @@ function addCustomProduct() {
   let effect = formSerum.effect.value; // Declaro effect como el value que tiene el input effect dentro del form
   let price = formSerum.size.value; // Declaro price como el value que tiene el input size dentro del form
   let base = formSerum.base.value; // Declaro base como el value que tiene el input base dentro del form
-  let totalClicks = document.getElementById('totalClicks'); // Declaro nuevamente totalClicks para su uso
-  let total = document.getElementById('totalLabPrice'); // Declaro nuevamente total para su uso
   let amount = document.getElementById('totalClicks').innerHTML; //Declaro que la cantidad, es decir amount, es igual a totalClicks
   let size;
 
@@ -199,9 +191,6 @@ function addCustomProduct() {
     addProduct(name, price, 1);
 
   }
-  
-  totalClicks.innerHTML = "0";
-  total.innerHTML = "";
 
 }
 
