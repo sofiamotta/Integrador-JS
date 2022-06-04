@@ -1,4 +1,6 @@
 const totalItems = document.getElementsByClassName("totalItems"); //Declaro donde se mostrará los ítems totales (Cart en el nav)
+const cartTotalPrice = document.getElementsByClassName("totalCart");
+const priceContainer = document.getElementById('cartTotalContainer');
 const cartProductContainer = document.getElementById('cartProductContainer'); //Declaro donde se mostrarán los productos (Cart)
 const emptyCartContainer = document.getElementById('emptyCart'); //Declaro el contenedor de la alerta de carrito vacío
 let products = []; //Creamos un array el cual guardará todos los ítems
@@ -9,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     products = JSON.parse(localStorage.getItem('products'))
     setCount();
+    totalPrice();
     productsList();
 
   }
@@ -49,6 +52,14 @@ const totalPrice = () => {
 
     totalCart += products[i].price * products[i].count; //Se asigna el precio total a la variable totalCart
   }
+  totalCart = Math.round(totalCart);
+
+  //Se actualiza el total en (Cart)
+  for (let i in cartTotalPrice) {
+
+    cartTotalPrice[i].innerHTML = totalCart;
+  
+  }
   //Se regresa totalCart hacia la función que lo necesita.
   return totalCart;
 };
@@ -75,10 +86,13 @@ const productsList = () => {
     if (products.length === 0) {
   
       emptyCartContainer.classList.remove('is-active');
+      priceContainer.classList.add('is-active');
+
   
     } else {
   
       emptyCartContainer.classList.add('is-active');
+      priceContainer.classList.remove('is-active');
   
     }
   } catch {
@@ -86,6 +100,7 @@ const productsList = () => {
   
   localStorage.setItem('products', JSON.stringify(products))
   setCount();
+  totalPrice();
 
 };
 

@@ -382,6 +382,71 @@
 
 // Media Queries
 
+@media (max-width: 1370px){
+
+    .all-product-form-container{
+
+        .form-container{
+
+            #formFilter{
+
+                width: 100vw;
+                justify-content: space-evenly;
+
+                label{
+                    
+                    width: calc(100vw/4);
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+
+}
+
+@media(max-width: 768px){
+
+    .all-product-form-container{
+
+        text-align: center;
+
+        .form-container{
+
+            #formFilter{
+
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                label{
+                    
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 5vh;
+
+                    input{
+
+                        margin: 0 2%;
+
+                    }
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+}
+
 @media (max-width: 425px) {
 
     .the-lab-container {
@@ -485,6 +550,21 @@
 
                 }
 
+            }
+
+            .all-product-form-container{
+        
+                .form-container{
+        
+                    button{
+
+                        margin: 5% 0;
+                        padding: 1.5% 3%;
+
+                    }
+        
+                }
+        
             }
 
         }

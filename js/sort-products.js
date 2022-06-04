@@ -7,8 +7,6 @@ function updateFilter() {
 
     resetFilter();
 
-    let productChosen = document.getElementsByClassName(formFilter.typeSerum.value)
-
     for(let i = 0; i < product.length; i++){
 
         if(!(product[i].classList.contains(formFilter.typeSerum.value))){
